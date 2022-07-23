@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<form method="post">
+    {% csrf_token %}
+    <input name="title">
+    <input name="text">
+    <button type="submit">Create news</button>
+</form>
+<a href="/news/" target="_blank" >Main Page</a>

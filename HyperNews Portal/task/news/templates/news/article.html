@@ -1,0 +1,7 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<h2>{{ article.title }}</h2>
+<p>{{ article.created }}</p>
+<p>{{ article.text }}</p>
+<a href="/news/" target="_blank" >Main Page</a>
